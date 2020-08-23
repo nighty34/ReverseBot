@@ -3,14 +3,12 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.managers.GuildManager;
-
 import java.util.List;
 
 
 public class Bot extends ListenerAdapter {
     public static void main(String[] args) throws Exception {
-        new JDABuilder("NzE1MTY1ODA2MDk0NDUwNjg4.Xs5Q0g.XcGiwuqXitbNySa6Yj7XPVkl6Zo")
+        new JDABuilder("TOKEN")
                 .addEventListeners(new Bot())
                 //s.setActivity(Activity.playing(""))
                 .build();
